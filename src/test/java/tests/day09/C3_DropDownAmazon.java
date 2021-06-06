@@ -62,10 +62,12 @@ public class C3_DropDownAmazon {
         WebElement acilirListe=driver.findElement(By.id("searchDropdownBox"));
         Select select=new Select(acilirListe);
         select.selectByVisibleText("Books");
-        WebElement aramaKutusu=driver.findElement(By.id("twotabsearchtextbox"));
+        WebElement aramaKutusu=driver.findElement(By.id("twotabsearchtextbox1"));
         aramaKutusu.sendKeys("Java"+ Keys.ENTER);
         WebElement sonucYazisiElementi=driver.findElement(By.xpath("//div[@class='a-section a-spacing-small a-spacing-top-small']"));
         System.out.println(sonucYazisiElementi.getText());
         Assert.assertTrue(sonucYazisiElementi.getText().contains("Java"));
+
+
     }
 }
