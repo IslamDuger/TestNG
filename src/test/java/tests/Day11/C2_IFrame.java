@@ -35,7 +35,8 @@ public class C2_IFrame {
         SoftAssert softAssert=new SoftAssert();
         WebElement iFrameYazisiWebElementi=driver.findElement(By.tagName("h3"));
         softAssert.assertTrue(iFrameYazisiWebElementi.isEnabled());
-        System.out.println(iFrameYazisiWebElementi.getText());// ○ Text Box’a “Merhaba Dunya!” yazin.
+        System.out.println(iFrameYazisiWebElementi.getText());
+        // ○ Text Box’a “Merhaba Dunya!” yazin.
         driver.switchTo().frame("mce_0_ifr");
        WebElement textBox= driver.findElement(By.tagName("p"));
        textBox.clear();

@@ -36,7 +36,7 @@ public class C1_Allers {
 
     @AfterClass
     public void tearDown() {
-        driver.close();
+       driver.close();
     }
 
     @Test
